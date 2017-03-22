@@ -203,6 +203,10 @@
 
 /* Image */
 
+    img {
+        max-width: 100%;
+    }
+
 	.image {
 		border: 0;
 		position: relative;
