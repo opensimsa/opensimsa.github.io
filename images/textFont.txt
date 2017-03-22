@@ -1,0 +1,14 @@
+URW Gothic L Semi-bold
+
+Orange text colour
+ff8c00 - 2014
+ffaa00 - 2015
+ff9000 - 2017
+
+Size
+small   60
+
+Grey blue colours:
+
+Charcoal       #36454f
+Dark blue      #0d4d78
