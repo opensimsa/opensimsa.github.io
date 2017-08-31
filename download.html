@@ -61,14 +61,16 @@
             <p></p>
             <p>FreeCAD is available on multiple platforms and it is suggested that you have a look at their <a href="https://www.freecadweb.org/wiki/Installing">installation wiki</a> for more information relevant to your system. Both the FEM and CFD work benches are actively being developed using the latest version of the software and to get access to the latest features you may need to do a custom build.</p>
             <h3>Computational Fluid Dynamics</h3>
-            <p>The CFD work bench is not currently included in FreeCAD and needs to be installed as an add-on. As the work bench is fully developed in Python, you do not have to compile any libraries. It can merely be added to the FreeCAD modules. Linux users can find the latest version on the <a href="https://github.com/jaheyns/CfdFoam">git repository</a>. Using a git client you may clone the repository by executing:</p>
-            <p><c>$ git clone https://github.com/jaheyns/CfdFoam.git</c></p>
+            <p>The CFD work bench is not currently included in FreeCAD and needs to be installed as an add-on. As the work bench is fully developed in Python, you do not have to compile any libraries. It can merely be added to the FreeCAD modules. Linux users can find the latest version on the <a href="https://github.com/jaheyns/CfdOF">git repository</a>. Using a git client you may clone the repository by executing:</p>
+            <p><c>$ git clone https://github.com/jaheyns/CfdOF.git</c></p>
             <p>and create a symbolic link to the local FreeCAD instalation directory.</p>
-            <p><c>$ ln -s &lt;path/to/CfdFoam&gt;  &lt;path/to/freecad&gt;/Mod/CfdFoam</c></p>
+            <p><c>$ ln -s &lt;path/to/CfdOF&gt;  &lt;path/to/freecad&gt;/Mod/CfdOF</c></p>
+            <p>Full details can be found in the <a href="https://github.com/jaheyns/CfdOF/blob/master/Readme.md">Readme</a>.
             <p>Alternatively, download a Windows-ready distribution which includes the CFD WB and uses the <a href=" http://bluecfd.github.io/Core/Downloads/" >blueCFD</a> build of OpenFOAM: </p>
-            <ul style="list-style-type:circle">
-              <li><a href="https://drive.google.com/uc?export=download&id=0B03opBENa8K8bmRsNzFBZ1Q2YkU" onClick="ga('send', 'event', 'Win binary', 'Download', 'CFD WB', 2);" target="_blank">CSIR FreeCAD CFD WB 0.17</a></li>
-            </ul>
+            <p><ul style="list-style-type:circle">
+              <li><a href="https://drive.google.com/uc?export=download&id=0B03opBENa8K8dWtOUlk0dnA0b0U" onClick="ga('send', 'event', 'Win binary', 'Download', 'CFD WB', 2);" target="_blank">CSIR FreeCAD CFD WB 0.17</a></li>
+            </ul></p>
+            <p>Please see the included README.txt for installation details.</p>
             <h3>Finite Element Analysis</h3>
             <p>As of <a href="https://github.com/FreeCAD/FreeCAD">version 0.17</a> an extensive amount of functionality has been added to the FEM work bench packaged in the main FreeCAD distribution, ranging from static to coupled thermal-mechanical analysis. For the latest FEM development with the most recent list of functionality check out the fork of <a href="https://github.com/berndhahnebach">BHB</a>. Windows users can download the binaries from:</p>
             <ul style="list-style-type:circle">
