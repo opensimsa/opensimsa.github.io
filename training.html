@@ -62,9 +62,11 @@
             </h2> </header>
             <p></p>
             <p>Below, links to step-by-step tutorials for the CFD and FEA workbenches are provided, along with the required CAD geometry files. For the CFD analyses, 
-            the steps described in the tutorials can be reproduced by runnning the provided "FCMacro" script(s) in numerical order. In cases where the geometry is 
-            provided in a .fcstd  file, this should be loaded first. The mesher and solver can then be run to produce the output shown in the tutorial.</p>
-            <p>The list below links to each tutorial and its supporting files. Alternatively, the entire repository can be <a href="https://github.com/opensimsa/opensim/archive/master.zip">downloaded</a>.</p>
+            the steps described in the tutorials can be reproduced by runnning the provided "FCMacro" script(s) in numerical order. The mesher and solver can then be run to produce the output shown in the tutorial.</p>
+            <p>The list below links to each tutorial and its supporting files. Note that the macro files are kept up to date with the latest
+              developments in the workbench, and are contained in the 'demos' folder of the repository (<a href="https://gitlab.com/opensimproject/cfdof/-/archive/master/cfdof-master.zip">download all</a>). 
+              By contrast, the tutorials (<a href="https://github.com/opensimsa/opensim/archive/master.zip">download all</a>) are not updated, and therefore there is some divergence between the two. However they do provide a general
+              guideline of the steps to be followed, while the scripts can be run to produce an up to date demonstration of the capabilities of the workbench.</p>
           <table cellpadding="0" cellspacing="0" width="240">
             <tbody>
               <tr>
@@ -82,10 +84,13 @@
                <tr>
                 <td>Elbow<br>
                 </td>
-                <td><a href="https://github.com/opensimsa/opensim/raw/master/Documentation/CFD/Elbow/CFD%20Tutorial%201%20-%20Elbow.pdf" onClick="ga('send', 'event', 'Training mat', 'Download', 'Elbow', 8);" target="_blank">CFD Tutorial 1</a><br>
+                <td>
+                  <a href="https://github.com/opensimsa/opensim/raw/master/Documentation/CFD/Elbow/CFD%20Tutorial%201%20-%20Elbow.pdf" onClick="ga('send', 'event', 'Training mat', 'Download', 'Elbow', 8);" target="_blank">CFD Tutorial 1</a><br>
                 </td>
-                <td><a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/Elbow/elbow.fcstd">elbow.fcstd</a>, 
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/Elbow/elbow.FCMacro">elbow.FCMacro</a><br>
+                <td>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Elbow/elbow.FCMacro">elbow.FCMacro</a>,
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Elbow/elbow.fcstd">elbow.fcstd</a>
+<br>
                 </td>
               </tr>
               <tr>
@@ -93,10 +98,11 @@
                 </td>
                 <td><a href="https://github.com/opensimsa/opensim/raw/master/Documentation/CFD/PorousFlow/CFD%20Tutorial%202a%20-%20Mesh%20regions%20and%20porous%20media%20(snappyHexMesh).pdf" onClick="ga('send', 'event', 'Training mat', 'Download', 'PorousFlow', 9);" target="_blank">CFD Tutorial 2</a><br>
                 </td>
-                <td><a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/PorousFlow/porousBaffleGeometry.fcstd">porousBaffleGeometry.fcstd</a>, 
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/PorousFlow/porousBaffleSnappyHexMesh.FCMacro">porousBaffleSnappyHexMesh.FCMacro</a>,
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/PorousFlow/porousZoneGeometry.fcstd">porousZoneGeometry.fcstd</a>, 
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/PorousFlow/porousZoneSnappyHexMesh.FCMacro">porousZoneSnappyHexMesh.FCMacro</a><br>
+                <td>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Duct/01-geom.fcmacro">01-geom.fcmacro</a>,
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Duct/02-mesh.fcmacro">02-mesh.fcmacro</a>,
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Duct/03-porous.fcmacro">03-porous.fcmacro</a>,
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Duct/04-screen.fcmacro">04-screen.fcmacro</a><br>
                 </td>
               </tr>
               <tr>
@@ -104,26 +110,41 @@
                 </td>
                 <td><a href="https://github.com/opensimsa/opensim/raw/master/Documentation/CFD/ViscousTubeBundle/CFD%20Tutorial%203%20-%20Boundary%20layer%20meshing%20and%20turbulent%20flow.pdf" onClick="ga('send', 'event', 'Training mat', 'Download', 'ViscousTubeBundle', 9);" target="_blank">CFD Tutorial 3</a><br>
                 </td>
-                <td><a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/ViscousTubeBundle/viscousTubeBundle.fcstd">viscousTubeBundle.fcstd</a>,
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/ViscousTubeBundle/viscousTubeBundle.FCMacro">viscousTubeBundle.FCMacro</a><br>
-              </tr>
+                <td>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/ViscousTubeBundle/viscousTubeBundle.FCMacro">viscousTubeBundle.FCMacro</a>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/ViscousTubeBundle/viscousTubeBundle.fcstd">viscousTubeBundle.fcstd</a><br>
+</tr>
               <tr>
                 <td>External aerodynamics of a UAV<br>
                 </td>
                 <td><a href="https://github.com/opensimsa/opensim/raw/master/Documentation/CFD/UAV2/CFD%20Tutorial%204%20-%20External%20Aerodynamics%20of%20a%20UAV.pdf" onClick="ga('send', 'event', 'Training mat', 'Download', 'UAV', 9);" target="_blank">CFD Tutorial 4</a><br>
                 </td>
-                <td><a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/UAV2/UAV.IGS">UAV.IGS</a>*,<br>
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/UAV2/01-partDesign.fcmacro">01-partDesign.fcmacro</a>,<br>
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/UAV2/02-firstAnalysis.fcmacro">02-firstAnalysis.fcmacro</a>,<br>
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/UAV2/03-refineMesh.fcmacro">03-refineMesh.fcmacro</a>,<br>
-<a href="https://github.com/opensimsa/opensim/raw/master/TestCases/CFD/UAV2/forces">forces</a><br>
+                <td>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/UAV/01-partDesign.fcmacro">01-partDesign.fcmacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/UAV/02-firstAnalysis.fcmacro">02-firstAnalysis.fcmacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/UAV/03-refineMesh.fcmacro">03-refineMesh.fcmacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/UAV/UAV.IGS">UAV.IGS</a>*,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/UAV/forces">forces</a><br>
                 </td>
               </tr>
               <tr>
-               <td colspan="3">* Note: This CAD file was obtained from GradCAD at <a href="https://grabcad.com/library/uav-40">https://grabcad.com/library/uav-40</a>.
-It was created by Shadman Sakib. Non-commercial use <a href="https://help.grabcad.com/article/246-how-can-models-be-used-and-shared">permitted with attribution</a>.
-               </td>
+                <td>High-speed aerodynamics of a projectile (and STL import)<br>
+                </td>
+                <td><br>
+                </td>
+                <td>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Projectile/01-geometry.FCMacro">01-geometry.FCMacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Projectile/02-mesh.FCMacro">02-mesh.FCMacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Projectile/03-boundaries.FCMacro">03-boundaries.FCMacro</a>,<br>
+<a href="https://gitlab.com/opensimproject/cfdof/raw/master/demos/Projectile/modifiedFinner.stl">modifiedFinner.stl</a>
+                </td>
               </tr>
+              <tr>
+                <td colspan="3">* Note: This CAD file was obtained from GradCAD at <a href="https://grabcad.com/library/uav-40">https://grabcad.com/library/uav-40</a>.
+ It was created by Shadman Sakib. Non-commercial use <a href="https://help.grabcad.com/article/246-how-can-models-be-used-and-shared">permitted with attribution</a>.
+                </td>
+               </tr>
+ 
               <tr>
                 <td height="50"><br>
                 </td>
